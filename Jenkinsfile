@@ -2,10 +2,14 @@ pipeline {
   agent any
   stages {
 	stage('Build') {
-      echo 'First Build App'
+	  steps {
+		echo 'First Build App'
+	  }
     }
 	stage('Test') {
-      echo 'Testing First App'
+	  steps {
+		echo 'Testing First App'
+	  }
     }
     stage('S3 Upload') {
       steps {
