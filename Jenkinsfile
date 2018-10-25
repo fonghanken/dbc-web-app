@@ -4,7 +4,6 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing the app'
-        listAWSAccounts()
         s3Upload 'dbctestapp'
       }
     }
