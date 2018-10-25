@@ -1,10 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Initialization') {
       steps {
-        echo 'Testing the app'
-        s3Upload 'dbctestapp'
+        awsIdentity()
       }
     }
   }
