@@ -10,8 +10,23 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
+<script>
+	function selectChange()
+	{
+		var s = document.getElementByID("engineerId");
+		var idStr = s.options[s.selectedIndex].value;
+		if (idStr = 0) {
+			
+		} else 
+		{
+		
+			if {
+			}
+		
+		}
+	}
+</script>
 <body>
-	
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-50">
@@ -23,9 +38,20 @@
 						<a href="https://form.gov.sg/forms/lta/5bce975e46d2f1000faa8f19">
 							<img src="images/sg-form.jpg" alt="Site  Report" class="appImage"/>
 						</a>
-						<a href="https://form.gov.sg/forms/lta/5bce975e46d2f1000faa8f19" class="login90-form-btn">
+						<div class="login90-form-btn">
 							Site Inspection
-						</a>
+						</div>
+						<select id="engineerId" class="login90-select" onchange="location = this.value;">
+						  <option value="0">Select Engineer</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69150e1ab44000f75879d">Chan Chee Weng</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69152e1ab44000f75879f">Koh Chin Seng</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69155e1ab44000f7587a1">Tay Tun Ling</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69156e1ab44000f7587a2">Ong Soon Hwee</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd6914ce1ab44000f75879c">Alice</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69154e1ab44000f7587a0">John</option>
+						  <option value="https://form.gov.sg/forms/lta/5bd69151e1ab44000f75879e">Lin Jing</option>
+						  <option value="https://form.gov.sg/forms/lta/5bce975e46d2f1000faa8f19">Wang Hao</option>
+						</select>
 						
 					</div>
 					<div class="container-login100-form-btn m-t-20">
